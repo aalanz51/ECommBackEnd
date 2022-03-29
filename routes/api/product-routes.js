@@ -19,7 +19,7 @@ router.get("/:id", async (req, res) => {
     });
 
     if (!allProducts) {
-      res.status(404).json({ message: "Item not found, try again!" });
+      res.status(404).json({ message: "Not found, try again!" });
       return;
     }
 
@@ -94,7 +94,7 @@ router.delete("/:id", async (req, res) => {
     });
 
     if (!allProducts) {
-      res.status(404).json({ message: "Item not found, try again!" });
+      res.status(404).json({ message: "Not found, try again!" });
       return;
     }
 

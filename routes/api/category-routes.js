@@ -52,7 +52,7 @@ router.delete("/:id", async (req, res) => {
       where: { id: req.params.id },
     });
     if (!deleteCat) {
-      res.status(404).json({ message: "Not found, try again" });
+      res.status(404).json({ message: "Not found, try again!" });
       return;
     }
     res.status(200).json(deleteCat);
